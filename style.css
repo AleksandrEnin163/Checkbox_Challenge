@@ -1,0 +1,34 @@
+.checkbox {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .checkbox__input {
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .checkbox__label {
+    margin-top: 5px;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .checkbox__input:focus-visible + .checkbox__label {
+    outline: 2px solid blue;
+    outline-offset: 2px;
+  }
+  
+  .checkbox__input:checked + .checkbox__label {
+    background-color: black;
+    border-color: black;
+  }
+  
+  .checkbox__label:hover {
+    border-color: #888;
+  }
